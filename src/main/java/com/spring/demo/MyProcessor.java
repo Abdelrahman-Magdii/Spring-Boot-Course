@@ -9,19 +9,19 @@ import org.springframework.stereotype.Component;
 public class MyProcessor implements BeanPostProcessor {
 
 
-    @Override
-    public @Nullable Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
-
-        System.out.println("Before" + beanName);
-
-        return bean;
-    }
-
-    @Override
-    public @Nullable Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-
-        System.out.println("After" + beanName);
-
-        return bean;
-    }
+//    @Override
+//    public @Nullable Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
+//
+//        System.out.println("Before" + beanName);
+//
+//        return bean;
+//    }
+//
+//    @Override
+//    public @Nullable Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
+//
+//        System.out.println("After" + beanName);
+//
+//        return bean;
+//    }
 }
